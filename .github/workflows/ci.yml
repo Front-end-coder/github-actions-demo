@@ -19,4 +19,5 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
+          personal_token: ${{ secrets.GIT_ACTIONS_SECRET }}
           folder: dist # The folder the action should deploy.
